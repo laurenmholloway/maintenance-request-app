@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @request.headline %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @request.details %>
+</p>
+
+<p>
+  <strong>Permissiontoenter:</strong>
+  <%= @request.permissionToEnter %>
+</p>
+
+<p>
+  <strong>Requestdatetime:</strong>
+  <%= @request.requestDateTime %>
+</p>
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>
